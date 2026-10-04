@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="theme-color" content="#16bdb3">
   <title>Dog Style Pet Shop</title>
   <style>
     * { box-sizing: border-box; }
+
     html, body {
       margin: 0;
       padding: 0;
@@ -13,29 +15,36 @@
       min-height: 100%;
       background: #16bdb3;
     }
+
     body {
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
+
     .pagina {
       position: relative;
       width: 100%;
       max-width: 864px;
       line-height: 0;
     }
+
     .pagina img {
       display: block;
       width: 100%;
       height: auto;
+      border: 0;
     }
+
     .botao {
       position: absolute;
       display: block;
       z-index: 10;
       cursor: pointer;
       -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
     }
+
     .whatsapp    { left: 8.3%;  top: 45.9%; width: 39.9%; height: 14.7%; }
     .instagram   { left: 51.7%; top: 45.9%; width: 40.1%; height: 14.7%; }
     .facebook    { left: 8.3%;  top: 62.1%; width: 39.9%; height: 14.5%; }
@@ -46,14 +55,40 @@
 </head>
 <body>
   <div class="pagina">
-    <img src="https://rjyqmjrfpuxzybocrryt.supabase.co/storage/v1/object/public/dogstyle/dogstyle.png" alt="Dog Style Pet Shop">
+    <!-- A imagem agora fica no próprio GitHub Pages.
+         Isso elimina a dependência do Supabase para carregar a tela. -->
+    <img
+      src="dogstyle.png"
+      alt="Dog Style Pet Shop"
+      width="864"
+      height="1536"
+      fetchpriority="high"
+      decoding="async"
+    >
 
-    <a class="botao whatsapp" href="https://wa.me/5515991405175" aria-label="WhatsApp"></a>
-    <a class="botao instagram" href="https://www.instagram.com/dogstyle.petshop?stkn=MWoxbXlkNm40NXA0bw==" aria-label="Instagram"></a>
-    <a class="botao facebook" href="https://www.facebook.com/share/1CTuibMkkV/" aria-label="Facebook"></a>
-    <a class="botao site" href="https://www.dogstylepet.com.br/" aria-label="Site"></a>
-    <a class="botao email" href="mailto:contato@dogstylepet.com.br" aria-label="E-mail"></a>
-    <a class="botao localizacao" href="https://www.google.com/maps/search/?api=1&query=Dog%20Style%2C%20Rua%20Ramon%20Haro%20Martini%2C%20789%2C%20Lojas%2004%20e%2005%2C%20Vila%20Haro%2C%20Sorocaba%2C%20SP" aria-label="Localização"></a>
+    <a class="botao whatsapp"
+       href="https://wa.me/5515991405175"
+       aria-label="WhatsApp"></a>
+
+    <a class="botao instagram"
+       href="https://www.instagram.com/dogstyle.petshop?stkn=MWoxbXlkNm40NXA0bw=="
+       aria-label="Instagram"></a>
+
+    <a class="botao facebook"
+       href="https://www.facebook.com/share/1CTuibMkkV/"
+       aria-label="Facebook"></a>
+
+    <a class="botao site"
+       href="https://www.dogstylepet.com.br/"
+       aria-label="Site"></a>
+
+    <a class="botao email"
+       href="mailto:contato@dogstylepet.com.br"
+       aria-label="E-mail"></a>
+
+    <a class="botao localizacao"
+       href="https://www.google.com/maps/search/?api=1&query=Dog%20Style%2C%20Rua%20Ramon%20Haro%20Martini%2C%20789%2C%20Lojas%2004%20e%2005%2C%20Vila%20Haro%2C%20Sorocaba%2C%20SP"
+       aria-label="Localização"></a>
   </div>
 </body>
 </html>
